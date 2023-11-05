@@ -25,10 +25,27 @@ body {
   padding: 40px 10%;
 }
 
+/* Tampilan navbar pada layar yang lebih kecil */
+@media (max-width: 768px) {
+  .nav {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav .link ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav .link ul a {
+    margin-top: 10px;
+  }
+}
+
 .nav .link ul {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
   list-style: none;
 }
@@ -164,7 +181,7 @@ body {
   margin-bottom: 20px;
 }
 
-.profile-section p {
+profile-section p {
   font-size: 16px;
   color: #2a2a2a;
   margin-bottom: 20px;
@@ -202,7 +219,7 @@ footer p {
   font-size: 14px;
 }
 
-.profile-section li {
+profile-section li {
   position: relative;
   margin-bottom: 20px;
   padding: 20px;
@@ -215,23 +232,23 @@ footer p {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-.profile-section h3 {
+profile-section h3 {
   font-size: 18px;
   color: #2a2a2a;
   margin-bottom: 10px;
 }
 
-.profile-section li:hover h3 {
+profile-section li:hover h3 {
   color: #f4637b;
 }
 
-.profile-section p {
+profile-section p {
   font-size: 14px;
   color: #777;
   margin-top: 5px;
 }
 
-.experience-list li {
+experience-list li {
   position: relative;
   margin-bottom: 30px;
   padding: 20px;
@@ -242,29 +259,30 @@ footer p {
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
-.experience-list li:hover {
+experience-list li:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
 
-.experience-list h3 {
+experience-list h3 {
   font-size: 18px;
   color: #2a2a2a;
   margin-bottom: 10px;
   transition: color 0.3s;
 }
 
-.experience-list li:hover h3 {
+experience-list li:hover h3 {
   color: #f4637b;
 }
 
-.experience-list p {
+experience-list p {
   font-size: 14px;
   color: #777;
   margin-top: 5px;
 }
 
+/* Tampilan responsif untuk layar dengan lebar kurang dari 768px */
 @media (max-width: 768px) {
   .nav {
     padding: 20px;
